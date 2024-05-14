@@ -12,7 +12,7 @@ After using this plugin, the ES Modules will not be shown in the lexical editor 
 
 But you'll have access to ES Modules it in the markdown that MDXEditor emits, so that you can correctly store it in your choice of persistence. You can check by running the demo with the plugin, by cloning this repo locally and running and running `pnpm{|npm} run dev` and make change in the editor like this:
 
-![](./src/examples/assets/md-persist.mov)
+https://github.com/arihantverma/mdx-editor-plugin-esm/assets/43805922/cfd86b42-a983-482a-9965-28ebb38415b4
 
 ## Usage
 
