@@ -54,7 +54,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "keywords": [
     "mdx editor",
