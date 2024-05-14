@@ -1,4 +1,4 @@
-# MDXEditor ECMAScript Modules Handler
+# MDXEditor ECMAScript Modules Handler Plugin
 
 This is a plugin for [MDX Editor](https://github.com/mdx-editor/editor). It handles ESModules imports and export statements for use cases where you have to import and/or export inside of mdx files. For example if you are using MDX in astro (give link here), you might want to import components [like this](https://docs.astro.build/en/guides/markdown-content/#assigning-custom-components-to-html-elements).
 
@@ -12,7 +12,7 @@ After using this plugin, the ES Modules will not be shown in the lexical editor 
 
 But you'll have access to ES Modules it in the markdown that MDXEditor emits, so that you can correctly store it in your choice of persistence. You can check by running the demo with the plugin, by cloning this repo locally and running and running `pnpm{|npm} run dev` and make change in the editor like this:
 
-![Demo showing es modules persist in markdown emitted by mdxeditor](./src/examples/assets/md-persist.mov)
+![](./src/examples/assets/md-persist.mov)
 
 ## Usage
 
