@@ -1,0 +1,83 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "LADLE=true ladle dev",
+    "dev": "LADLE=true ladle dev",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest",
+    "semantic-release": "semantic-release"
+  },
+  "name": "mdx-editor-plugin-esm",
+  "author": "Arihant Verma",
+  "version": "0.0.0-development",
+  "description": "Plugin that handles ES Modules in MDX Editor",
+  "homepage": "https://github.com/arihantverma/mdx-editor-plugin-esm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arihantverma/mdx-editor-plugin-esm"
+  },
+  "bugs": {
+    "url": "https://github.com/arihantverma/mdx-editor-plugin-esm/issues",
+    "email": "arihantverma1994@gmail.com"
+  },
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "mdast-util-mdxjs-esm": "^2.0.1",
+    "micromark-extension-mdxjs-esm": "^3.0.0"
+  },
+  "devDependencies": {
+    "@ladle/react": "^4.0.3",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@types/mdast": "^4.0.3",
+    "@types/react": "^18.3.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "acorn": "^8.11.3",
+    "jsdom": "^24.0.0",
+    "lexical": "^0.14.3",
+    "mdast-util-directive": "^3.0.0",
+    "react": "^18.3.1",
+    "semantic-release": "^23.1.1",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@mdxeditor/editor": "^3.0.7"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "mdx editor",
+    "mdx",
+    "rich-text-editor",
+    "lexical",
+    "editor",
+    "plugin",
+    "react",
+    "reactjs",
+    "markdown-editor"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ]
+  }
+}
