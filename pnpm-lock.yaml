@@ -11,15 +11,18 @@ importers:
       '@mdxeditor/editor':
         specifier: ^3.0.7
         version: 3.0.7(@codemirror/language@6.10.1)(@lezer/common@1.2.1)(@lezer/highlight@1.2.0)(@types/react-dom@18.3.0)(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yjs@13.6.15)
+      acorn:
+        specifier: ^8.11.3
+        version: 8.11.3
+      lexical:
+        specifier: ^0.14.3
+        version: 0.14.5
       mdast-util-mdxjs-esm:
         specifier: ^2.0.1
         version: 2.0.1
       micromark-extension-mdxjs-esm:
         specifier: ^3.0.0
         version: 3.0.0
-      typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
     devDependencies:
       '@ladle/react':
         specifier: ^4.0.3
@@ -39,15 +42,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.2.11(@types/node@20.12.11))
-      acorn:
-        specifier: ^8.11.3
-        version: 8.11.3
       jsdom:
         specifier: ^24.0.0
         version: 24.0.0
-      lexical:
-        specifier: ^0.14.3
-        version: 0.14.5
       mdast-util-directive:
         specifier: ^3.0.0
         version: 3.0.0
@@ -57,6 +54,9 @@ importers:
       semantic-release:
         specifier: ^23.1.1
         version: 23.1.1(typescript@5.4.5)
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
       vite:
         specifier: ^5.2.11
         version: 5.2.11(@types/node@20.12.11)

@@ -1,5 +1,11 @@
 # MDXEditor ECMAScript Modules Handler Plugin
 
+## Installation
+
+```
+pnpm{|npm} install mdx-editor-plugin-esm
+```
+
 This is a plugin for [MDX Editor](https://github.com/mdx-editor/editor). It handles ESModules imports and export statements for use cases where you have to import and/or export inside of mdx files. For example if you are using MDX in astro (give link here), you might want to import components [like this](https://docs.astro.build/en/guides/markdown-content/#assigning-custom-components-to-html-elements).
 
 In cases like these (with es modules used inside md/mdx files), if you are using mdxeditor, out of the box, it'll show you all es modules imports and exports statements as is in the lexical editor:
@@ -23,3 +29,7 @@ import { esmMdxEditorPlugin } from 'mdx-editor-plugin-esm'
 
 return <MDXEditor markdown={markdown} onChange={(md) => console.log('change', { md })} plugins={[...ALL_PLUGINS, esmMdxEditorPlugin()]} />
 ```
+
+# Note on Versioning
+
+This package is my first time using semantic-release and also semantic versioning. Since I didn't want to delete the package from npm, the commit messages are not matching the ethods of semantic release. For example the release 1.2.0 is a fix to make the module actually work, but it's a `feat:` commit to be able to do so. I will better this in the future commits.
