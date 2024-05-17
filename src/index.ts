@@ -8,7 +8,7 @@ import { ESMNode } from './esm-node'
 import type { Acorn } from 'micromark-extension-mdxjs-esm/lib/syntax'
 
 export const esmMdxEditorPlugin = realmPlugin({
-  init(r) {
+  init: (r) => {
     r.pubIn({
       [addImportVisitor$]: [MdastESMVisitor],
       [addLexicalNode$]: [ESMNode],
